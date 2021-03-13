@@ -1,0 +1,43 @@
+newmtl aiStandardSurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl curtains_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd curtains.jpg
+Ni 1.00
+newmtl lamps:wire_088199225
+illum 4
+Kd 0.90 0.90 0.90
+Ka 0.35 0.78 0.88
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl lamps:wire_154154229
+illum 4
+Kd 0.90 0.88 0.68
+Ka 0.90 0.88 0.68
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl maderasofa_tex_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderasofa_tex.jpg
+Ni 1.00
+newmtl sofa_tex_1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sofa_tex.jpg
+Ni 1.00

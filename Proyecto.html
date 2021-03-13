@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-1</title> 
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
+
+
+</head>
+<body>
+    <a-scene>
+
+        <!-- Se carga el asset del apartamento (obj y mtl) y la textura del cielo-->
+        <a-assets>
+            <img id="skyTexture" src="Assets/360/the-night-sky.jpeg">
+            <video  id="videoTV" autoplay loop="true" src="assets/videos/RV.mp4"></video>
+
+            <a-asset-item id="casa" src="assets/APARTAMENTO/APARTAMENTICO.obj"></a-asset-item>
+            <a-asset-item id="mtlCasa" src="assets/APARTAMENTO/APARTAMENTICO.mtl"></a-asset-item>
+
+            <a-asset-item id="cuna" src="assets/Cuna/cuna.obj"></a-asset-item>
+            <a-asset-item id="mtlcuna" src="assets/Cuna/cuna.mtl"></a-asset-item>
+
+            <a-asset-item id="cortina" src="assets/Cortina/Cortinas.obj"></a-asset-item>
+            <a-asset-item id="mtlcortina" src="assets/Cortina/Cortinas.mtl"></a-asset-item>
+
+            <a-asset-item id="cama" src="assets/Cama/cama_princ.obj"></a-asset-item>
+            <a-asset-item id="mtlcama" src="assets/Cama/cama_princ.mtl"></a-asset-item>
+
+            <a-asset-item id="mesita" src="assets/mesita/mesita.obj"></a-asset-item>
+            <a-asset-item id="mesitaMtl" src="assets/mesita/mesita.mtl"></a-asset-item>
+
+            <a-asset-item id="cocina" src="assets/Cocina/cocina.obj"></a-asset-item>
+            <a-asset-item id="cocinaMtl" src="assets/Cocina/cocina.mtl"></a-asset-item>
+
+            <a-asset-item id="lamparas" src="assets/Lamparas/Lamparas.obj"></a-asset-item>
+            <a-asset-item id="lamparasMtl" src="assets/Lamparas/Lamparas.mtl"></a-asset-item>
+
+            <a-asset-item id="puerta" src="assets/puerta/puerta.obj"></a-asset-item>
+            <a-asset-item id="puertaMtl" src="assets/puerta/puerta.mtl"></a-asset-item>
+
+            <a-asset-item id="mesa_tv" src="assets/Mesa_tv/mesa_tv.obj"></a-asset-item>
+            <a-asset-item id="mesa_tvMtl" src="assets/Mesa_tv/mesa_tv.mtl"></a-asset-item>
+
+            <a-asset-item id="planta" src="assets/Planta/planta.obj"></a-asset-item>
+            <a-asset-item id="plantaMtl" src="assets/Planta/planta.mtl"></a-asset-item>
+
+            <a-asset-item id="SillaDos" src="assets/SillaDos/SillaDos.obj"></a-asset-item>
+            <a-asset-item id="SillaDosMtl" src="assets/SillaDos/SillaDos.mtl"></a-asset-item>
+
+            <a-asset-item id="Sillon" src="assets\Sillon\sillon2\1\sillon.obj"></a-asset-item>
+            <a-asset-item id="SillonMtl" src="assets\Sillon\sillon2\1\sillon.mtl"></a-asset-item>
+
+            <a-asset-item id="tv" src="assets\TV\televisor.obj"></a-asset-item>
+            <a-asset-item id="tvMtl" src="assets\TV\televisor.mtl"></a-asset-item>
+
+        </a-assets>
+
+        <!-- Se agregan físicas a la cámara-->
+        <a-entity id="camRig" position="9.314 -1 -0.468">
+            <!-- CAMERA -->
+            <a-camera id="cam" wasd-controls-enabled="false">
+            </a-camera>
+        </a-entity>
+
+        <!-- Se crea la entidad que contiene el obj y el mtl, se escala y se le agregan colisiones-->  
+        <a-entity obj-model="obj: #casa; mtl: #mtlCasa" scale="0.1, 0.1, 0.1" position="0 0 0" ></a-entity>
+        <a-entity obj-model="obj: #cuna; mtl: #mtlcuna" scale="1, 0.538, 0.715" position="-3.291 1.391 1.946" ></a-entity>
+        <a-entity obj-model="obj: #cortina; mtl: #mtlcortina" scale="0.5, 0.5, 0.5" position="-2.327 1.495 -1.502" rotation="0 90 0"></a-entity>
+        <a-entity obj-model="obj: #cama; mtl: #mtlcama" scale="0.390, 0.390, 0.390" rotation="0 90 0" position="-0.622 1.464 -1.244" ></a-entity>
+        <a-entity obj-model="obj: #mesita; mtl: #mesitaMtl" scale="0.1, 0.1, 0.1" position="2.199 0.169 0.000" ></a-entity>
+        <a-entity obj-model="obj: #lamparas; mtl: #lamparasMtl" scale="0.010, 0.010, 0.010" position="-3.219 1.707 1.112" ></a-entity>
+        <a-entity obj-model="obj: #cocina; mtl: #cocinaMtl" scale="0.1, 0.1, 0.1" position="0 0 -0.610" ></a-entity>
+        <a-entity obj-model="obj: #puerta; mtl: #puertaMtl" scale="0.586, 0.5, 0.5" position="-3.206 -1.762 1.924" rotation="0 180 0"></a-entity>
+        <a-entity obj-model="obj: #puerta; mtl: #puertaMtl" scale="0.781, 0.708, 0.500" position="5.614 -2.421 -0.812" rotation="0 90 0"></a-entity>
+        <a-entity obj-model="obj: #mesa_tv; mtl: #mesa_tvMtl" scale="0.1, 0.1, 0.1" position="2.311 0 -0.147" ></a-entity>
+        <a-entity obj-model="obj: #planta; mtl: #plantaMtl" scale="0.167, 0.167, 0.167" position="1.322 -0.024 -1.463" ></a-entity>
+        <a-entity obj-model="obj: #SillaDos; mtl: #SillaDosMtl" scale="0.167, 0.167, 0.167" position="-1.222 1.419 0.992" rotation="-180.000 2.370 -180.000"></a-entity>    
+        <a-entity obj-model="obj: #Sillon; mtl: #SillonMtl" scale="0.0008, 0.0005, 0.0008" position="3.006 0 -1.382" ></a-entity>
+        <a-entity obj-model="obj: #tv; mtl: #tvMtl" scale="0.12, 0.12, 0.12" position="2.474 0.299 1.353" rotation="-180.000 -11.007 -180.000"></a-entity>
+        <a-box color="grey" position="2.474 0 1.353" width="1.5" height="0.6" depth="0.3"> </a-box>    
+        
+        <!-- Se carga el ambiente: Sonido y textura del cielo-->
+        <a-sound src="Assets/Sonidos/Ambiente.mp3" autoplay="true" position="0 2 5" loop: true volume="10"></a-sound>
+        <a-sky src="#skyTexture"></a-sky>
+
+        <a-video src="#videoTV"  width="16" height="9" scale="0.040, 0.040, 0.040" position="2.474 0.539 1.353" rotation="-180.000 -11.007 -180.000" ></a-video>
+
+
+        <!-- Se agregan luces-->
+        <a-entity light="type: point; intensity: 0.20; distance: 50; decay: 2"
+          position="2 1 -1"></a-entity>
+        <a-entity light="type: point; intensity: 0.20; distance: 50; decay: 2"
+          position="-2.7 2.5 1.4"></a-entity>  
+          <a-entity light="type: directional; color: blue; intensity: 0.05; distance: 2; decay: 0.5"
+          position="0.027 0.4 -1.556"></a-entity>
+          <a-entity light="type: directional; color: blue; intensity: 0.05; distance: 2; decay: 0.5"
+          position="0.027 0.4 -0.992"></a-entity>
+          <a-entity light="type: directional; color: blue; intensity: 0.05; distance: 2; decay: 0.5"
+          position="0.027 0.4 -0.483"></a-entity>
+        <a-entity light="type: directional; color: white; intensity: 0.6" position="5 1 3"></a-entity>
+        <a-entity light="type: ambient; color: white; intensity: 0.4" position="10 10 2"></a-entity>
+
+        <!-- Se agrega el plano principal-->
+        <a-plane color="black" scale="50 50 1" rotation="-90 0 0" static-body position="0 -0.5 0"></a-plane> 
+
+        <!-- Se agregan Vidrios-->
+        <a-box color="#48E2F9" opacity="0.05" width="4.7" height="3" depth="0.01" position="1.278 1.402 -1.785" 
+        static-body="shape: box; mass: 0; halfExtents: 0.1 0.1 0.1" ></a-box>
+
+        <a-box color="#48E2F9" opacity="0.05" rotation=" 0 -90 0" width="3.6" height="0.65" depth="0.01" position="0.762 1.746 0.076" 
+        static-body="shape: box; mass: 0; halfExtents: 0.1 0.1 0.1" ></a-box>
+
+        <a-box color="#48E2F9" opacity="0.05" rotation=" 0 -90 90" width="3" height="1.6" depth="0.01" position="5.599 1.454 1.545" 
+        static-body="shape: box; mass: 0; halfExtents: 0.1 0.1 0.1" ></a-box>
+
+        <a-box color="#48E2F9" opacity="0.05" rotation=" 0 -90 0" width="1.5" height="0.3" depth="0.01" position="5.599 1.527 -0.85" 
+        static-body="shape: box; mass: 0; halfExtents: 0.1 0.1 0.1" ></a-box>
+
+
+
+        <!-- Puntos de teletransportacion para la navegacion en el apartamento-->
+        <a-box id="Teletransporte-1" color="#F93E15" position="3.191 0.5 0.073" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: 3.191 -1 0.073; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        <a-box id="Teletransporte-2" color="#F93E15" position="-1.3 0.5 0.87" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: -1.3 -1 0.87; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        <a-box id="Teletransporte-3" color="#F93E15" position="8.141 0.588 0.871" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: 8.141 -1 0.871; hide: true" scale="0.1 0.1 0.1">
+		</a-box>
+
+        <a-box id="Teletransporte-4" color="#F93E15" position="5.908 0.588 -0.994" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: 5.908 -1 -0.994; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        <a-box id="Teletransporte-5A" color="#F93E15" position="-2.659 2.094 -0.521" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: -2.659 0.387 -0.521; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        <a-box id="Teletransporte-6A" color="#F93E15" position="-0.289 1.931 -0.848" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: -0.289 0.387 -0.848; hide: true" scale="0.1 0.1 0.1">
+		</a-box>
+
+        <a-box id="Teletransporte-7A" color="#F93E15" position="0.298 1.917 2.239" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: 0.298 0.387 2.239; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        <a-box id="Teletransporte-8" color="#F93E15" position="4.492 0.65 2.044" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: 4.492 -1 2.044; hide: true" scale="0.1 0.1 0.1"  >
+		</a-box>
+
+        <a-box id="Teletransporte-9" color="#F93E15" position="-0.187 0.365 -0.641" look-at="#cam" class="clickable"
+				 blink-teleportation="pos: -0.187 -1 -0.641; hide: true" scale="0.1 0.1 0.1" >
+		</a-box>
+
+        
+
+
+
+        
+    </a-scene>    
+</body>
+</html>

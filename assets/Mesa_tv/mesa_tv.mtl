@@ -1,0 +1,234 @@
+newmtl aiStandardSurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lamps:wire_088199225
+illum 4
+Kd 0.35 0.78 0.88
+Ka 0.35 0.78 0.88
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl libro:aiStandardSurface27SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl libro:pasted__aiStandardSurface28SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl room:wire_006134006
+illum 4
+Kd 0.02 0.53 0.02
+Ka 0.02 0.53 0.02
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_008008136
+illum 4
+Kd 0.03 0.03 0.53
+Ka 0.03 0.03 0.53
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_027177088
+illum 4
+Kd 0.11 0.69 0.35
+Ka 0.11 0.69 0.35
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_028028177
+illum 4
+Kd 0.11 0.11 0.69
+Ka 0.11 0.11 0.69
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_028089177
+illum 4
+Kd 0.11 0.35 0.69
+Ka 0.11 0.35 0.69
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_087224198
+illum 4
+Kd 0.34 0.88 0.78
+Ka 0.34 0.88 0.78
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_088144225
+illum 4
+Kd 0.35 0.56 0.88
+Ka 0.35 0.56 0.88
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_088177027
+illum 4
+Kd 0.35 0.69 0.11
+Ka 0.35 0.69 0.11
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_108008136
+illum 4
+Kd 0.42 0.03 0.53
+Ka 0.42 0.03 0.53
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_134006006
+illum 4
+Kd 0.53 0.02 0.02
+Ka 0.53 0.02 0.02
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_134110008
+illum 4
+Kd 0.53 0.43 0.03
+Ka 0.53 0.43 0.03
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_141007058
+illum 4
+Kd 0.55 0.03 0.23
+Ka 0.55 0.03 0.23
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_143224087
+illum 4
+Kd 0.56 0.88 0.34
+Ka 0.56 0.88 0.34
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_149149149
+illum 4
+Kd 0.58 0.58 0.58
+Ka 0.58 0.58 0.58
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_153228153
+illum 4
+Kd 0.60 0.89 0.60
+Ka 0.60 0.89 0.60
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_177028149
+illum 4
+Kd 0.69 0.11 0.58
+Ka 0.69 0.11 0.58
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_177148027
+illum 4
+Kd 0.69 0.58 0.11
+Ka 0.69 0.58 0.11
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_224086086
+illum 4
+Kd 0.88 0.34 0.34
+Ka 0.88 0.34 0.34
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_224198087
+illum 4
+Kd 0.88 0.78 0.34
+Ka 0.88 0.78 0.34
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_225143087
+illum 4
+Kd 0.88 0.56 0.34
+Ka 0.88 0.56 0.34
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_225198087
+illum 4
+Kd 0.88 0.78 0.34
+Ka 0.88 0.78 0.34
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_227153153
+illum 4
+Kd 0.89 0.60 0.60
+Ka 0.89 0.60 0.60
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl room:wire_229166215
+illum 4
+Kd 0.90 0.65 0.84
+Ka 0.90 0.65 0.84
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
